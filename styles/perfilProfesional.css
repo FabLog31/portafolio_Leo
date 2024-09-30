@@ -46,6 +46,13 @@ body {
     background-color: var(--primaryColor);
 }
 
+.encabezado img {
+    width: 5%;
+    height: auto;
+}
+
+/* este es para  el funcionamiento y el ícono del menú */
+
 .icono-menu-nav {
     position: absolute;
     top: 17px;
@@ -54,10 +61,8 @@ body {
     cursor: pointer;
 }
 
-/* este es el icono del menú */
-
 .material-symbols-outlined {
-    width: 30px;
+    width: 27px;
     color: var(--tertiaryColor);
     background-color: var(--primaryColor);
     border-radius: 25%;
@@ -96,9 +101,9 @@ header a:hover {
 }
 
 #pf {
-    background-color: var(--secondaryColor);
-    border-radius: 10px;
-    color: var(--primaryColor);
+    border-bottom: 7px solid var(--secondaryColor);
+    border-radius: 15px;
+    margin-bottom: 2px;
 }
 
 /* INICIO PERFIL PROFESIONAL */
@@ -111,7 +116,7 @@ header a:hover {
     width: 95vw;
     height: auto;
     gap: 50px;
-    margin: 30px auto;
+    margin: 5px auto;
     padding: 30px;
     font-size: x-large;
     color: var(--textColor);
@@ -128,7 +133,7 @@ header a:hover {
 }
 
 .trabajos {
-    
+
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -149,7 +154,7 @@ header a:hover {
 
 #TIS {
     width: 18vw;
-    border-radius: 70px;   
+    border-radius: 70px;
 }
 
 #spotify {
@@ -160,7 +165,7 @@ header a:hover {
 /* IDIOMAS */
 
 .idioma {
-display: flex;
+    display: flex;
 }
 
 .idioma {
@@ -175,7 +180,7 @@ display: flex;
     border-radius: 10px;
     color: var(--tertiaryColor);
     text-align: center;
-align-content: center;
+    align-content: center;
 }
 
 /* Imagen de linkedin */
@@ -184,6 +189,51 @@ align-content: center;
     width: 60px;
 }
 
+/* Portafolio Proyectos */
+
+.proyectosTrabajados {
+    margin: 30px;
+    text-align: center;
+}
+
+.proyectosestudio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.portafolioImg {
+    max-width: 200px;
+    border-radius: 30px;
+}
+
+.proyectosestudio iframe {
+    border-radius: 30px;
+}
+
+
+
+/* Lenguajes */ 
+
+.lenguajes{
+    text-align: center;
+}
+
+.logosHyC {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.logosHyC img {
+    width: 150px;
+}
+
+#css3 {
+    width: 175px;
+}
 
 
 /* Footer */
@@ -246,14 +296,14 @@ align-content: center;
         width: 100vw;
         height: 80px;
         background-color: var(--primaryColor);
-        z-index: 2;
+        z-index: 1;
     }
 
     .icono-menu-nav {
         position: absolute;
         top: 17px;
         right: 30px;
-        z-index: 3;
+        z-index: 2;
         cursor: pointer;
     }
 
@@ -267,6 +317,7 @@ align-content: center;
         border-radius: 25%;
         border-style: solid;
         border-color: var(--tertiaryColor);
+        cursor: pointer;
     }
 
     header input {
@@ -299,52 +350,123 @@ align-content: center;
         color: var(--primaryColor);
     }
 
+    #pf {
+        border-bottom: 7px solid var(--secondaryColor);
+        border-radius: 15px;
+        margin-bottom: 2px;
+    }
 
-    .carrusel-Bienvenida {
+    /* Inicio de experiencia Laboral */
+
+
+    .experienciaLab {
         background-color: #f2f2f2a6;
         border-color: var(--primaryColor);
-        border-radius: 17px;
-        width: 95vw;
+        border-radius: 10px;
+        width: 87vw;
         height: auto;
+        gap: 50px;
+        margin: auto;
+        padding: 30px;
+        font-size: xx-large;
+        color: var(--textColor);
+    }
+
+    .inicioPerfil {
+        text-align: center;
+        align-content: center;
+    }
+
+    .inicioPerfil h2 {
+        font-size: 35px;
+        color: var(--secondaryColor);
+    }
+
+    .trabajos {
+
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        justify-items: center;
+        align-items: center;
+        text-align: center;
+        font-size: 3vw;
+        color: var(--secondaryColor);
+        margin: 20px;
+    }
+
+    /* FORMATOS DE LAS IMÁGENES */
+
+    #scotia {
+        width: 15vw;
+        border-radius: 20px;
+    }
+
+    #TIS {
+        width: 18vw;
+        border-radius: 70px;
+    }
+
+    #spotify {
+        width: 20vw;
+        border-radius: 50%;
+    }
+
+    /* IDIOMAS */
+
+    .idioma {
         display: flex;
-        flex-direction: column-reverse;
+    }
+
+    .idioma {
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* texto de linkedin */
+
+    .LinkedIn {
+        background-color: var(--primaryColor);
+        border-radius: 10px;
+        color: var(--tertiaryColor);
+        text-align: center;
+        align-content: center;
+    }
+
+    /* Imagen de linkedin */
+
+    #linkedin {
+        width: 60px;
+    }
+
+    /* Portafolio y proyectos */
+
+    .proyectosTrabajados {
+        margin: 30px;
+        text-align: center;
+    }
+
+    .proyectosestudio {
+        
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
         align-items: center;
         gap: 50px;
-        margin: 5px auto;
-        z-index: 1;
     }
 
-    .carruselPrincipal {
-        width: 80vw;
-        margin-bottom: 20px;
+    .portafolioImg {
+        max-width: 450px;
+        border-radius: 30px;
     }
 
-    .título-y-bienvenida {
-        color: var(--textColor);
-        text-shadow: var(--secondaryColor);
-        text-align: center;
-        font-size: xx-large;
-        margin: 50px 30px auto 30px;
+    .proyectosestudio iframe {
+        border-radius: 30px;
     }
 
-    .btn_perfil {
-        background-color: var(--primaryColor);
-        color: var(--backgroundColor);
-        /* un valor que se ponga arriba y abajo*/
-        padding: 5px 10px;
-        /* borde de la caja */
-        border-radius: 20px;
-        margin-top: 0;
-        margin-bottom: 15px;
-        cursor: pointer;
-    }
 
-    /* acción de pasar el mouse por encima para cambiar el color */
 
-    .btn_perfil:hover {
-        background-color: var(--secondaryColor);
-        color: var(--backgroundColor);
-    }
+
 
     /* Pie de página */
 
@@ -409,6 +531,11 @@ align-content: center;
         z-index: 2;
     }
 
+    .encabezado img {
+        width: 70vw;
+        height: auto;
+    }
+
     .icono-menu-nav {
         position: absolute;
         top: 17px;
@@ -458,52 +585,124 @@ align-content: center;
         color: var(--primaryColor);
     }
 
-
-    .carrusel-Bienvenida {
-        background-color: #f2f2f2a6;
-        border-color: var(--primaryColor);
-        border-radius: 17px;
-        width: 95vw;
-        height: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 50px;
-        margin: 5px auto;
-        z-index: 1;
+    #pf {
+        border-bottom: 7px solid var(--secondaryColor);
+        border-radius: 15px;
+        margin-bottom: 2px;
     }
 
-    .carruselPrincipal {
-        width: 80vw;
-        margin-top: 20px;
-    }
 
-    .título-y-bienvenida {
-        color: var(--textColor);
-        text-shadow: var(--secondaryColor);
-        text-align: center;
-        font-size: large;
-        margin: auto 20px;
-    }
+    /* Inicio de experiencia Laboral */
 
-    .btn_perfil {
-        background-color: var(--primaryColor);
-        color: var(--backgroundColor);
-        /* un valor que se ponga arriba y abajo*/
-        padding: 5px 10px;
-        /* borde de la caja */
-        border-radius: 20px;
-        margin-top: 0;
-        margin-bottom: 15px;
-        cursor: pointer;
-    }
 
-    /* acción de pasar el mouse por encima para cambiar el color */
+.experienciaLab {
+    background-color: #f2f2f2a6;
+    border-color: var(--primaryColor);
+    border-radius: 10px;
+    width: 87vw;
+    height: auto;
+    gap: 50px;
+    margin: auto;
+    padding: 30px;
+    font-size: large;
+    color: var(--textColor);
+}
 
-    .btn_perfil:hover {
-        background-color: var(--secondaryColor);
-        color: var(--backgroundColor);
-    }
+.inicioPerfil {
+    text-align: center;
+    align-content: center;
+}
+
+.inicioPerfil h2 {
+    font-size: 35px;
+    color: var(--secondaryColor);
+}
+
+.trabajos {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    font-size: 3.5vw;
+    color: var(--secondaryColor);
+    margin: 10px auto;
+    row-gap: 1px;
+    column-gap: 5px;
+}
+
+/* Ubicación de los textos en grid*/
+
+
+/* FORMATOS DE LAS IMÁGENES */
+
+#scotia {
+    width: 20vw;
+    border-radius: 20px;
+}
+
+#TIS {
+    width: 24vw;
+    border-radius: 70px;
+
+}
+
+#spotify {
+    width: 29vw;
+    border-radius: 50%;
+}
+
+/* IDIOMAS */
+
+.idioma {
+    display: flex;
+    flex-direction: column;
+}
+
+.idioma {
+    justify-content: center;
+    align-items: center;
+}
+
+/* texto de linkedin */
+
+.LinkedIn {
+    background-color: var(--primaryColor);
+    border-radius: 10px;
+    color: var(--tertiaryColor);
+    text-align: center;
+    align-content: center;
+}
+
+/* Imagen de linkedin */
+
+#linkedin {
+    width: 60px;
+}
+
+/* Portafolio y proyectos */
+
+.proyectosTrabajados {
+    margin: 30px;
+    text-align: center;
+}
+
+.proyectosestudio {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.portafolioImg {
+    max-width: 250px;
+}
+
+.proyectosestudio iframe {
+    width: 280px;
+    border-radius: 30px;
+}
 
     /* Pie de página */
 

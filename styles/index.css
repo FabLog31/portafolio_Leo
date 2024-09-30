@@ -48,6 +48,11 @@ body {
     background-color: var(--primaryColor);
 }
 
+.encabezado img {
+    width: 5%;
+    height: auto;
+}
+
 .icono-menu-nav {
     position: absolute;
     top: 17px;
@@ -59,7 +64,7 @@ body {
 /* este es el icono del menú */
 
 .material-symbols-outlined {
-    width: 30px;
+    width: 27px;
     color: var(--tertiaryColor);
     background-color: var(--primaryColor);
     border-radius: 25%;
@@ -147,7 +152,7 @@ header a:hover {
 /* Footer */
 
 .pie-de-pagina {
-    position: fixed;
+    position: relative;
     left: 0;
     bottom: 0;
     width: 100vw;
@@ -218,8 +223,8 @@ header a:hover {
     /* este es el icono del menú */
 
     .material-symbols-outlined {
-        width: 30px;
-        height: 30px;
+        width: 27px;
+        height: 27px;
         color: var(--tertiaryColor);
         background-color: var(--primaryColor);
         border-radius: 25%;
@@ -268,7 +273,7 @@ header a:hover {
         flex-direction: column-reverse;
         align-items: center;
         gap: 50px;
-        margin: 5px auto;
+        margin: 1px auto;
         z-index: 1;
     }
 
@@ -365,6 +370,11 @@ header a:hover {
         height: 100%;
         background-color: var(--primaryColor);
         z-index: 2;
+    }
+
+    .encabezado img {
+        width: 70vw;
+        height: auto;
     }
 
     .icono-menu-nav {
